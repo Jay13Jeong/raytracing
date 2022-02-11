@@ -19,8 +19,8 @@ t_p3	ray_color(t_rt *rt, t_ray r)
 {
 	t_hit_record	rec; // 도형과 광선의 교차정보 저장
 
-	rec.t_min = EPS;
-	rec.t_max = INFINITY;
+	rec.t_min = EPS; //카메라에서 표시할 수 있는 최소거리
+	rec.t_max = INFINITY; //카메라에서 표시할 수 있는 최대거리
 	if (hit(rt->figs, r, &rec)) //도형에 광선이 부딪쳤을 때
 		return (phong_lighting(rt, &rec));
 	return (vdefine(1, 1, 1)); //도형에 광선이 부딪치지 않을 때
