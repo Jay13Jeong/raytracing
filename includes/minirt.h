@@ -73,8 +73,8 @@ typedef struct	s_hit_record
 {
 	t_p3	p; //교차점
 	t_p3	normal; //법선
-	double	t_min; //스칼라 최솟값?
-	double	t_max; //스칼라 최댓값?
+	double	t_min; //스칼라 최솟값
+	double	t_max; //스칼라 최댓값
 	double	t; //광선의 스칼라
 	int		front_face; //교차점과 광선벡터의 내적 (둔각 1 예각 0) 
 	t_p3	albedo; //색상
